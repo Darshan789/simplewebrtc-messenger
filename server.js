@@ -7,6 +7,7 @@ const port = 3000;
 app.use(express.static('public'));
 
 // Provide access to node_modules folder
+app.use('dirname/',express.static('${__dirname}'));
 // app.use('/scripts', express.static(`${__dirname}/node_modules/`));
 
 // Redirect all traffic to index.html
